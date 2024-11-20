@@ -42,5 +42,5 @@ document.getElementById("add-grade").addEventListener("click", function () {
   
     // Вывод результата
     document.getElementById("result").innerText = 
-      `Средняя оценка: ${average.toFixed(2)}. Итоговая оценка (округленная): ${roundedAverage}.`;
+      `Средняя оценка: ${average.toFixed(2)}. Итоговая оценка: ${roundedAverage}.`;
   });
