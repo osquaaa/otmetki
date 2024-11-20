@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор оценок</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 10px;
+        
+      background-color: #1f2937;
+      color: #d1d5db;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Unbounded", sans-serif;
+    }
+    input[type="number"] {
+      
+      margin-right: 10px;
+      margin-bottom: 10px;
+      height: 40px;
+        max-width: 10%;
+        font-size: 20px;
+        background-color: #64748b;
+        border: 2px solid #d4d4d8;
+        border-radius: 5px;
+        color: #d4d4d8;
+        
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .controls {
+      margin-top: 10px;
+    }
+    input{
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Калькулятор оценок</h1>
+  <p>Введите произвольное количество оценок:</p>
+  <form id="grades-form">
+    <div id="grades-container">
+      <input type="number" class="grade" min="1" max="5"  required>
+      <input type="number" class="grade" min="1" max="5"  required>
+    </div>
+    <div class="controls">
+      <button type="button" id="add-grade">Добавить оценку</button>
+      <button type="button" id="remove-grade">Удалить оценку</button>
+      <button type="submit">Рассчитать</button>
+    </div>
+  </form>
+  <div class="result" id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
