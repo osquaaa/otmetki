@@ -9,14 +9,15 @@ body{
     transition: all 0.2s;
     cursor: pointer;
     font-family: unbounded;
-    color: #171717;
+    color: #334155;
     font-size: 15px;
+    
 }
 .controls{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }
 .controls button:hover{
     background-color: #94a3b8;
@@ -26,9 +27,20 @@ body{
 }
 .controls button:first-child{
     background-color: #bae6fd;
-    color:  #171717;
+    color:  #334155;
 }
 .controls button:last-child{
     background-color: #fca5a5;
     color: #8a1212;
+    padding: 13px 18px;
+    transition: 0.2s;
+}
+.controls button:last-child:hover{
+    background-color: #ffbbbb;
+}
+#add-grade {
+    padding: 13px 18px;
+}
+img{
+height: 33px;
 }

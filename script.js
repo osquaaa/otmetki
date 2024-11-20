@@ -39,8 +39,10 @@ document.getElementById("add-grade").addEventListener("click", function () {
     const total = grades.reduce((sum, grade) => sum + grade, 0);
     const average = total / grades.length;
     const roundedAverage = Math.round(average);
+
   
     // Вывод результата
     document.getElementById("result").innerText = 
       `Средняя оценка: ${average.toFixed(2)}. Итоговая оценка: ${roundedAverage}.`;
+
   });
