@@ -9,7 +9,7 @@ body{
     transition: all 0.2s;
     cursor: pointer;
     font-family: unbounded;
-
+    color: #171717;
 }
 .controls button:hover{
     background-color: #94a3b8;
@@ -19,4 +19,5 @@ body{
 }
 .controls button:last-child{
     background-color: #bae6fd;
+    color:  #171717;
 }
