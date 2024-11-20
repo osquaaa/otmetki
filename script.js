@@ -8,6 +8,7 @@ document.getElementById("add-grade").addEventListener("click", function () {
     input.className = "grade";
     input.min = "1";
     input.max = "5";
+
     input.required = true;
   
     container.appendChild(input);
@@ -39,10 +40,11 @@ document.getElementById("add-grade").addEventListener("click", function () {
     const total = grades.reduce((sum, grade) => sum + grade, 0);
     const average = total / grades.length;
     const roundedAverage = Math.round(average);
-
+  
+    // Очистить поля ввода
+    gradeInputs.forEach(input => input.value = "");
   
     // Вывод результата
     document.getElementById("result").innerText = 
       `Средняя оценка: ${average.toFixed(2)}. Итоговая оценка: ${roundedAverage}.`;
-
   });
