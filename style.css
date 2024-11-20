@@ -4,12 +4,19 @@ body{
 .controls button{
     background-color: #e2e8f0;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 17px 22px;
+    border-radius: 7px;
     transition: all 0.2s;
     cursor: pointer;
     font-family: unbounded;
     color: #171717;
+    font-size: 15px;
+}
+.controls{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .controls button:hover{
     background-color: #94a3b8;
@@ -17,7 +24,11 @@ body{
 .controls button:not(:last-child){
     margin-bottom: 10px;
 }
-.controls button:last-child{
+.controls button:first-child{
     background-color: #bae6fd;
     color:  #171717;
+}
+.controls button:last-child{
+    background-color: #fca5a5;
+    color: #8a1212;
 }
